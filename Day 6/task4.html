@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+    <style>
+        body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input, select, textarea {
+      width: 250px;
+      padding: 6px;
+      margin-bottom: 15px;
+    }
+
+    </style>
+</head>
+
+<body>
+    <h1 >Task 4 - Movie Preference</h1>
+    <form action="#" method="get"></form>
+
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+
+    <label for="genre">Favorite Genre:</label>
+    <select name="genre" id="genre" required>
+        <option value="">--Select Genre--</option>
+        <option value="action">Action</option>
+        <option value="comedy">Comedy</option>
+        <option value="drama">Drama</option>
+        <option value="horror">Horror</option>
+        <option value="sci-fi">Sci-Fi</option>
+    </select><br><br>
+
+    <label>Preferred Streaming Platforms:</label>
+    <input type="checkbox" id="netflix" name="platforms" value="Netflix">
+    <label for="netflix">Netflix</label>
+    <input type="checkbox" id="prime" name="platforms" value="Prime Video">
+    <label for="prime">Prime Video</label>
+    <input type="checkbox" id="disney" name="platforms" value="Disney+">
+    <label for="disney">Disney+</label>
+    <input type="checkbox" id="hotstar" name="platforms" value="Hotstar">
+    <label for="hotstar">Hotstar</label>
+    <input type="checkbox" id="others" name="platforms" value="Others">
+    <label for="others">Others</label>
+    <br>
+    <label for="comments">Any Comments:</label>
+    <textarea name="comments" id="comments" placeholder="Share your thoughts..."></textarea><br><br>
+
+    <input type="submit" value="Submit">
+</body>
+</html>

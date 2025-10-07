@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic form example</title>
+</head>
+
+<body>
+
+    <h1>Basic Form Example</h1>
+
+    <form action="/submit-form" method="post">
+
+        <fieldset>
+            <legend><strong>PERSONAL INFORMATION:</strong></legend>
+            <label for="fname">First Name: </label><br>
+            <input type="text" id="fname" name="First name" placeholder="Your first name"><br>
+            <label for="lname">Last Name: </label><br>
+            <input type="text" id="lname" name="Last name" placeholder="Your last name"><br><br>
+
+
+            <label for="email">Email: </label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+
+            <label for="Phone">Phone: </label><br>
+            <input type="tel" id="Phone" name="phone" placeholder="Enter your Phone number" pattern="[0-9]{10}"
+                required><br><br>
+
+
+            <label for="DOB">Date of Birth: </label><br>
+            <input type="date" id="DOB" name="dob"><br><br>
+
+
+            <label for="Age">Age: </label><br>
+            <input type="number" id="Age" name="age"><br><br>
+
+
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="Other" name="gender" value="Other">
+            <label for="Other">Other</label><br><br>
+
+        </fieldset>
+        <fieldset>
+            <legend><strong>Interests</strong></legend>
+            <label>interests:</label><br>
+            <input type="checkbox" id="sports" name="interests" value="Sports">
+            <label for="sports">Sports</label><br>
+            <input type="checkbox" id="music" name="interest" value="Music">
+            <label for="music">Music</label><br>
+            <input type="checkbox" id="reading" name="interest" value="Reading">
+            <label for="reading">Reading</label><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>OTHER INFORMATION: </strong>
+            </legend>
+            <label for="city">Select Your City:</label><br>
+            <select name="city" id="city">
+                <option value="">--Choose a City--</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Delhi">Delhi</option>
+            </select><br><br>
+
+
+            <label for="about">About You: </label><br>
+            <input type="textarea" id="about" name="about" row="4" cols="40"
+                placeholder="Write a short bio..."></textarea><br><br>
+
+
+            <input type="button" value="Submit">
+            <input type="button" value="Reset">
+        </fieldset>
+
+
+    </form>
+    </form>
+
+</body>
+
+</html>
+
+</body>
+
+</html>
