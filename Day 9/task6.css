@@ -1,0 +1,29 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+    margin: 40px;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #1565c0;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.profile h3{
+    margin: 0;
+    margin-bottom: 10px; 
+    color: #222;
+}
+
+.profile p{
+    margin: 8px;
+    line-height: 1.5;
+}

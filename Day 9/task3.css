@@ -1,0 +1,27 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: pink;
+    margin: 40px;
+    color: #333;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.box{
+    width: 400px;
+    border: 2px solid #555;
+    background-color: #fff;
+    margin-top: 25px;
+    border-radius: 8px;
+}
+
+.box1{
+    padding: 10px;
+}
+
+.box2{
+    padding: 40px;
+}

@@ -1,0 +1,80 @@
+body{
+   font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  min-height: 100vh;       
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;      
+  color: #333;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #1565c0;
+}
+
+.pricing-content{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.pricing-box{
+    width: 250px;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: lightcoral;
+    line-height: 1.6;
+}
+
+.basic{
+    border: 3px solid #1e88e5;
+    margin-bottom: 40px;
+}
+
+.standard{
+    border:3px dashed #43a047;
+    margin-bottom: 40px;
+}
+
+.premium{
+    border: 5px double #f4511e;
+    margin-bottom: 40px;
+}
+
+.pricing-box h3{
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.price{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.pricing-box ul{
+    list-style:none;
+    padding: 0;
+    margin-bottom: 20px ;
+}
+
+.pricing-box ul li{
+    margin:8px 0;
+}
+
+.pricing-box button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.pricing-box button:hover {
+  background-color: #1565c0;
+}
