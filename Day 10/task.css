@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+}
+
+
+.banner {
+  text-align: center;
+  padding: 80px 20px;
+  color: white;
+}
+
+
+.text-effects {
+  text-align: center;
+  padding: 40px;
+}
+.shadow {
+  text-shadow: 2px 2px 5px #555;
+}
+.transform {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.google-fonts {
+  text-align: center;
+  padding: 30px;
+}
+
+
+.fixed-banner {
+  height: 200px;
+  background: url("image.jpg") center/cover fixed;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.positions {
+  padding: 40px;
+  text-align: center;
+}
+.container {
+  position: relative;
+  height: 300px;
+  border: 2px dashed #ccc;
+}
+.box {
+  width: 120px;
+  height: 120px;
+  color: white;
+  line-height: 120px;
+  text-align: center;
+  border-radius: 8px;
+}
+.relative-box {
+  position: relative;
+  background: #007bff;
+  top: 20px;
+  left: 20px;
+}
+.absolute-box {
+  position: absolute;
+  background: #28a745;
+  top: 80px;
+  right: 40px;
+}
+.fixed-box {
+  position: fixed;
+  background: #dc3545;
+  bottom: 20px;
+  right: 20px;
+}
+
+.hero {
+  text-align: center;
+  height: 300px;
+  position: relative;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #222;
+}
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+}
+.navbar li {
+  margin: 0 15px;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.contact {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  background: #ff9800;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+
+.about {
+  padding: 40px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
