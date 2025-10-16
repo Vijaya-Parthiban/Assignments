@@ -77,9 +77,11 @@ body {
 }
 
 .hero {
+  background: url('image1.jpg') center/cover;
   text-align: center;
   height: 300px;
   position: relative;
+  color: gold;
 }
 
 .navbar {
