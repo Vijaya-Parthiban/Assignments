@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clearfix</title>
+    <link rel="stylesheet" href="task2.css">
+</head>
+
+<body>
+
+    <h2>Float an Image Beside Text</h2>
+
+    <div class="clearfix">
+        <img src="imagee.jpg" alt="Sample Image" class="float-img">
+
+        <p>
+            This image is floated to the left, allowing the text to wrap around it.
+            Float is often used to align images or small boxes beside paragraphs.
+            Without a clearfix, the parent element might collapse and not contain the floated content properly.
+        </p>
+    </div>
+
+    <p>
+        This paragraph comes after the floated section and stays below it
+        because the clearfix ensures the float doesn’t affect later elements.
+    </p>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.5;
+}
+
+.block {
+    display: block;
+    background-color: #cce5ff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.inline {
+    display: inline;
+    background-color: #d4edda;
+    padding: 5px;
+    margin-right: 4px;
+    border-radius: 4px;
+}
+
+.inline-block {
+    display: inline-block;
+    background-color: #fff3cd;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.none {
+    display: none;
+}
