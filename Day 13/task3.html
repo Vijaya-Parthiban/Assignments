@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>em vs rem</title>
+    <style>
+        html {
+            font-size: 16px;
+        }
+
+        .em-example {
+            font-size: 1.5em;
+        }
+
+        .rem-example {
+            font-size: 1.5rem;
+        }
+
+        .parent {
+            font-size: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <p class="em-example">This uses <b>em</b> — size depends on parent.</p>
+        <p class="rem-example">This uses <b>rem</b> — size depends on root.</p>
+    </div>
+</body>
+
+</html>
