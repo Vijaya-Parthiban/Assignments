@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 - Text Animation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eaf4fc;
+            text-align: center;
+            padding-top: 150px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #2c3e50;
+            position: relative;
+            animation: slideText 4s linear infinite;
+        }
+
+
+         @keyframes slideText {
+      from {
+        transform: translateX(0); 
+      }
+      to {
+        transform: translateX(100%);
+      }
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <h1>Welcome to My Animated Page </h1>
+
+</body>
+
+</html>
