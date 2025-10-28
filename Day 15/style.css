@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom right, #fdfbff, #f3eaff);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 20px;
+    color: #6b4eff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #6b4eff;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 120px 20px 100px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #4e3fc9;
+}
+
+.hero p {
+    margin: 15px 0 25px;
+    font-size: 18px;
+}
+
+.btn {
+    padding: 10px 25px;
+    background-color: #6b4eff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #5a3fe6;
+}
+
+/* About */
+.about,
+.skills,
+.portfolio,
+.contact {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.about h2,
+.skills h2,
+.portfolio h2,
+.contact h2 {
+    color: #4e3fc9;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+/* Skills */
+.skill-container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.skill {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.bar {
+    background: #e0d7ff;
+    height: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 10px;
+    border-radius: 10px;
+    transition: width 0.8s ease;
+}
+
+.html {
+    width: 90%;
+    background: #6b4eff;
+}
+
+.js {
+    width: 75%;
+    background: #a68bff;
+}
+
+.py {
+    width: 80%;
+    background: #b39ddb;
+}
+
+/* Projects (Flip Cards) */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 220px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(8px);
+    padding: 20px;
+}
+
+.flip-card-front {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #4e3fc9;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+    color: #333;
+}
+
+/* Contact */
+.contact a {
+    color: #6b4eff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact a:hover {
+    color: #4e3fc9;
+}
+
+/* Footer */
+footer {
+    background: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    padding: 20px;
+    color: #555;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
