@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 9 - Print Numbers up to a Value</title>
+</head>
+<body>
+  <h1>Task 9: Print Numbers up to a Value</h1>
+  <script>
+    let number = prompt("Enter a number:");
+    number = Number(number);
+    if (isNaN(number) || number <= 0) {
+      alert("Please enter a valid positive number!");
+    } else {
+      document.write(`<h3>Printing numbers from 1 to ${number}:</h3>`);
+      for (let i = 1; i <= number; i++) {
+        document.write(i + "<br>");
+      }
+    }
+  </script>
+</body>
+</html>
