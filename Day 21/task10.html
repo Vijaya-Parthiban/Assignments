@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Apple Products</title>
+</head>
+<body>
+  <h3>Apple Products</h3>
+  <ul id="productList"></ul>
+
+  <script>
+    const products = [
+      { name: "iPhone 16 Pro", price: "₹1,49,900" },
+      { name: "MacBook Air M3", price: "₹1,29,900" },
+      { name: "iPad Pro", price: "₹1,14,900" },
+      { name: "Apple Watch Ultra 2", price: "₹89,900" },
+      { name: "AirPods Pro 2", price: "₹24,900" },
+      { name: "HomePod Mini", price: "₹10,900" },
+      { name: "Apple TV 4K", price: "₹14,900" }
+    ];
+
+    const list = document.getElementById("productList");
+
+    products.forEach(product => {
+      const li = document.createElement("li");
+      li.textContent = `${product.name} - ${product.price}`;
+      list.appendChild(li);
+    });
+  </script>
+</body>
+</html>
