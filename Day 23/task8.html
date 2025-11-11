@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h3>My Daily Tasks</h3>
+  <input type="text" id="taskInput" placeholder="Enter a new task">
+  <button id="addBtn">Add Task</button>
+  <ul id="taskList"></ul>
+
+  <script>
+    document.getElementById("addBtn").addEventListener("click", function() {
+      let taskValue = document.getElementById("taskInput").value.trim();
+      if (taskValue) {
+        let li = document.createElement("li");
+        li.textContent = taskValue;
+
+        let delBtn = document.createElement("button");
+        delBtn.textContent = "Delete";
+        delBtn.style.marginLeft = "10px";
+        delBtn.onclick = function() {
+          li.remove();
+        };
+
+        li.appendChild(delBtn);
+        document.getElementById("taskList").appendChild(li);
+        document.getElementById("taskInput").value = "";
+      }
+    });
+  </script>
+</body>
+</html>

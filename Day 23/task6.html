@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: white;
+      color: black;
+      transition: 0.3s;
+    }
+    .dark-mode {
+      background-color: #121212;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h2>Dark Mode Example</h2>
+  <p>This is a simple demonstration of toggling between light and dark mode.</p>
+  <button id="darkBtn">Toggle Dark Mode</button>
+
+  <script>
+    document.getElementById("darkBtn").addEventListener("click", function() {
+      document.body.classList.toggle("dark-mode");
+    });
+  </script>
+</body>
+</html>

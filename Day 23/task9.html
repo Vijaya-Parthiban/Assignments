@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h3>Choose a Theme Color</h3>
+  <button class="colorBtn" data-color="#f28b82">Peach</button>
+  <button class="colorBtn" data-color="#a7ffeb">Mint</button>
+  <button class="colorBtn" data-color="#d7aefb">Lavender</button>
+  <button class="colorBtn" data-color="#fff475">Lemon</button>
+
+  <script>
+    let buttons = document.querySelectorAll(".colorBtn");
+    buttons.forEach(btn => {
+      btn.addEventListener("click", function() {
+        document.body.style.backgroundColor = this.dataset.color;
+      });
+    });
+  </script>
+</body>
+</html>

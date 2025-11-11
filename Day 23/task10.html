@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h3>Dynamic HTML Example</h3>
+  <button onclick="insertHtml()">Show Message</button>
+  <div id="messageBox"></div>
+
+  <script>
+    function insertHtml() {
+      document.getElementById("messageBox").innerHTML =
+        "Learning <b>JavaScript</b> and <i>DOM manipulation</i> is fun!";
+    }
+  </script>
+</body>
+</html>

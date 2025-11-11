@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h3>Live Comment Preview</h3>
+  <input type="text" id="commentInput" placeholder="Type your comment here">
+  <p id="commentDisplay">Your comment will appear here...</p>
+
+  <script>
+    document.getElementById("commentInput").addEventListener("input", function() {
+      let text = this.value.trim();
+      document.getElementById("commentDisplay").textContent = text ? text : "Your comment will appear here...";
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h3>To-Do List</h3>
+  <ul id="tasks">
+    <li>Finish Homework</li>
+    <li>Call a Friend</li>
+    <li>Read a Book</li>
+  </ul>
+  <button onclick="removeFirst()">Remove First Task</button>
+
+  <script>
+    function removeFirst() {
+      let list = document.getElementById("tasks");
+      if (list.firstChild) {
+        list.removeChild(list.firstChild);
+      }
+    }
+  </script>
+</body>
+</html>
