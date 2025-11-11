@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Secure Login</h2>
+  <form id="secureForm">
+    <input type="text" id="user" placeholder="Username"><br><br>
+    <input type="password" id="pass" placeholder="Password"><br><br>
+    <button type="submit">Login</button>
+  </form>
+  <p id="loginMsg"></p>
+
+  <script>
+    document.getElementById("secureForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      try {
+        const username = document.getElementById("user").value.trim();
+        const password = document.getElementById("pass").value.trim();
+
+        if (!username || !password) throw new Error("Please fill all fields!");
+        if (password.length < 5) throw new Error("Password must be at least 5 characters!");
+
+        document.getElementById("loginMsg").textContent = "Login successful!";
+        document.getElementById("loginMsg").style.color = "green";
+      } catch (err) {
+        document.getElementById("loginMsg").textContent = err.message;
+        document.getElementById("loginMsg").style.color = "red";
+      }
+    });
+  </script>
+</body>
+</html>

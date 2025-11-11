@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <button id="colorBtn">Change Background</button>
+
+  <script>
+    document.getElementById("colorBtn").addEventListener("click", function() {
+      try {
+        const element = document.getElementById("bgDiv");
+        if (!element) throw new Error("Element not found!");
+        element.style.backgroundColor = "lightblue";
+      } catch (err) {
+        console.error(err.message);
+        alert(err.message);
+      }
+    });
+  </script>
+</body>
+</html>

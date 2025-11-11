@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <textarea id="textArea" placeholder="Type your message..."></textarea>
+  <p>Character count: <span id="charCount">0</span></p>
+
+  <script>
+    const textArea = document.getElementById("textArea");
+    const count = document.getElementById("charCount");
+
+    textArea.addEventListener("input", function() {
+      count.textContent = textArea.value.length;
+    });
+  </script>
+</body>
+</html>

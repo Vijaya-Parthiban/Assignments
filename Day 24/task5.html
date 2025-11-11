@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h3>Task 5: Negative Number Error Example</h3>
+  <input type="number" id="numInput" placeholder="Enter a number">
+  <button id="checkBtn">Check</button>
+  <p id="result"></p>
+
+  <script>
+    function checkNumber(num) {
+      if (num < 0) {
+        throw new Error("Negative numbers are not allowed!");
+      }
+      return "Valid number: " + num;
+    }
+
+    document.getElementById("checkBtn").addEventListener("click", function() {
+      const num = parseFloat(document.getElementById("numInput").value);
+      const result = document.getElementById("result");
+
+      try {
+        result.textContent = checkNumber(num);
+        result.style.color = "green";
+      } catch (err) {
+        result.textContent = err.message;
+        result.style.color = "red";
+      }
+    });
+  </script>
+</body>
+</html>
