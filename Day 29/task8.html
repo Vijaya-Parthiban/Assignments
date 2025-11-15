@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 8 - Notification</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        #notify {display:none; background-color:yellow; padding:10px; border:1px solid #ccc;}
+    </style>
+</head>
+<body>
+    <button id="showNotify">Show Notification</button>
+    <div id="notify">This is a notification!</div>
+
+    <script>
+        $(document).ready(function(){
+            $("#showNotify").click(function(){
+                $("#notify").slideDown();
+            });
+        });
+    </script>
+</body>
+</html>

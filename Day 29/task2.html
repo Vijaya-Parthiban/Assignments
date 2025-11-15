@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 2 - Hide/Show</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <p id="para">This is a paragraph you can hide and show.</p>
+    <button id="hideBtn">Hide</button>
+    <button id="showBtn">Show</button>
+
+    <script>
+        $(document).ready(function(){
+            $("#hideBtn").click(function(){ $("#para").hide(); });
+            $("#showBtn").click(function(){ $("#para").show(); });
+        });
+    </script>
+</body>
+</html>

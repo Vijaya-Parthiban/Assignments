@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Fade-in</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        section {
+            display: none;
+            padding: 40px;
+            margin: 20px;
+            background: #f0f0f0;
+            border-radius: 10px
+        }
+    </style>
+</head>
+
+<body>
+    <section id="about">
+    About Me:  
+    Hi! I’m Vijaya, a passionate Web Developer with a background in Computer Science and hands-on experience in front-end and full-stack projects. I enjoy building interactive web applications, exploring new technologies, and turning ideas into user-friendly digital experiences.
+</section>
+
+<section id="projects">
+    Projects:  
+    I have worked on a variety of projects, including an interactive Photo Gallery, a dynamic Quiz App, and a responsive Portfolio Website. Each project has helped me sharpen my skills in JavaScript, jQuery, React, and Python for data-driven applications.
+</section>
+
+<section id="contact">
+    Contact:  
+    I love connecting with people who share similar interests in web development and technology. Feel free to reach out via email at vijaya@example.com for collaborations, project inquiries, or just to say hi!
+</section>
+
+    <script>
+        $(document).ready(function () {
+            $("section").each(function (i) {
+                $(this).delay(500 * i).fadeIn(800);
+            });
+        });
+    </script>
+</body>
+</html>

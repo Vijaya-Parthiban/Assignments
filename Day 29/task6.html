@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 6 - Info Card</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        .card {width: 200px; border: 1px solid #333; padding: 10px; cursor: pointer;}
+        .details {display: none; margin-top: 10px;}
+    </style>
+</head>
+<body>
+    <div class="card">
+        Click to expand
+        <div class="details">
+            <p>Here is some extra info!</p>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $(".card").click(function(){
+                $(this).find(".details").slideToggle();
+            });
+        });
+    </script>
+</body>
+</html>

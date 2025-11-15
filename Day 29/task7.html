@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 7 - Photo Gallery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <img class="gallery" src="image.png" alt="1">
+    <img class="gallery" src="image2.jpg" alt="2" style="display:none;">
+    <img class="gallery" src="image3.jpg" alt="3" style="display:none;">
+    <img class="gallery" src="image4.jpg" alt="4" style="display:none;">
+
+    <button id="nextBtn">Next Image</button>
+
+    <script>
+        $(document).ready(function(){
+            $("#nextBtn").click(function(){
+                $(".gallery:visible").fadeOut(function(){
+                    var next = $(this).next(".gallery");
+                    if(next.length == 9) next = $(".gallery").first();
+                    next.fadeIn();
+                });
+            });
+        });
+    </script>
+</body>
+</html>

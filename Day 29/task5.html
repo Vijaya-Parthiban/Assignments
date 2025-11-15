@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 5 - Slide Up/Down</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div id="slideBox" style="width:200px; height:100px; background-color:lightblue; margin-bottom:10px;">
+        Slide me up or down
+    </div>
+    <button id="slideBtn">Slide Toggle</button>
+
+    <script>
+        $(document).ready(function(){
+            $("#slideBtn").click(function(){
+                $("#slideBox").slideToggle();
+            });
+        });
+    </script>
+</body>
+</html>
