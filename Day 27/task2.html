@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task 2 - GitHub Profile Info</title>
+</head>
+<body>
+
+<h1>Task 2: GitHub Profile Info</h1>
+<div id="profile"></div>
+
+<script>
+fetch("https://github.com/Vijaya-Parthiban")
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById("profile").innerHTML = `
+      <p>Login: ${data.login}</p>
+      <p>Public Repos: ${data.public_repos}</p>
+    `;
+  })
+  .catch(error => console.error("Error:", error));
+</script>
+
+</body>
+</html>

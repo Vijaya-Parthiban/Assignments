@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task 8 - GitHub Followers with Error Handling</title>
+</head>
+<body>
+
+<h1>Task 8: Fetch Followers with Error Handling</h1>
+<input type="text" id="username" placeholder="Enter GitHub username">
+<button id="fetchBtn">Get Followers</button>
+<p id="error" style="color:red;"></p>
+<div id="followers"></div>
+
+<script>
+document.getElementById("fetchBtn").addEventListener("click", async () => {
+  const username = document.getElementById("username").value.trim();
+  const followersDiv = document.getElementById("followers");
+  const errorP = document.getElementById("error");
+
+  followersDiv.innerHTML = "";
+  errorP.textContent = "";
+
+  if (!username) {
+    errorP.textContent = "Please enter a username.";
+    return;
+  }
+
+  try {
+    const response = await fetch(`https://api.github.com/users/${username}/followers`);
+    if (!response.ok) throw new Error("User not found");
+
+    const followers = await response.json();
+    if (followers.length === 0) {
+      followersDiv.innerHTML = "<p>No followers found.</p>";
+    } else {
+      followersDiv.innerHTML = followers.map(f => f.login).join("<br>");
+    }
+  } catch (err) {
+    errorP.textContent = `Error: ${err.message}`;
+  }
+});
+</script>
+</body>
+</html>

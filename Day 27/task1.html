@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task 1 - GitHub Profile Fetch</title>
+</head>
+<body>
+
+<h1>Task 1: Fetch GitHub Profile Data</h1>
+<p>Open the browser console to see your GitHub profile data.</p>
+
+<script>
+fetch("https://github.com/Vijaya-Parthiban")
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error("Error:", error));
+</script>
+
+</body>
+</html>
