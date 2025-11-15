@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 10 - Full Validation</title>
+</head>
+<body>
+<h2>Task 10 - Full Input Validation</h2>
+
+<form id="fullForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name"><br><br>
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" placeholder="Enter your email"><br><br>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" placeholder="Enter your age"><br><br>
+
+    <button type="submit">Validate</button>
+</form>
+
+<div id="output" style="margin-top:20px; font-weight:bold;"></div>
+
+<script>
+document.getElementById("fullForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const age = parseInt(document.getElementById("age").value.trim(), 10);
+    const output = document.getElementById("output");
+
+    try {
+        if (!name) throw new Error("Name is missing");
+        if (!email.includes("@")) throw new Error("Invalid email");
+        if (isNaN(age)) throw new Error("Age is required");
+        if (age < 18) throw new Error("User is underage");
+
+        output.innerHTML = "All inputs are valid!";
+        output.style.color = "green";
+    } catch (error) {
+        output.innerHTML = "Error: " + error.message;
+        output.style.color = "red";
+    } finally {
+        console.log("Validation process completed."); 
+    }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 7 - Form Validation</title>
+</head>
+<body>
+<h2>Task 7 - Form Validation</h2>
+
+<form id="userForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name"><br><br>
+    
+    <label for="email">Email:</label>
+    <input type="text" id="email" placeholder="Enter your email"><br><br>
+    
+    <button type="submit">Submit</button>
+</form>
+
+<div id="output" style="margin-top:20px; font-weight:bold;"></div>
+
+<script>
+document.getElementById("userForm").addEventListener("submit", function(event) {
+    event.preventDefault(); 
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const output = document.getElementById("output");
+
+    try {
+        if (!name || !email) throw new Error("All fields are required!");
+        output.innerHTML = "Form submitted successfully!";
+        output.style.color = "green";
+    } catch (error) {
+        output.innerHTML = "Error: " + error.message;
+        output.style.color = "red";
+    }
+});
+</script>
+</body>
+</html>
