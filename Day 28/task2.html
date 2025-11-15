@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 2 - SessionStorage</title>
+</head>
+<body>
+    <h2>Task 2: SessionStorage Example</h2>
+    <script>
+        const currentTime = new Date().toLocaleTimeString();
+        sessionStorage.setItem("sessionTime", currentTime);
+
+        const savedTime = sessionStorage.getItem("sessionTime");
+        document.write(`<p>Session Time: ${savedTime}</p>`);
+    </script>
+</body>
+</html>

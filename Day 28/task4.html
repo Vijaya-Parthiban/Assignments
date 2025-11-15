@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 4 - Read JSON</title>
+</head>
+<body>
+    <h2>Task 4: Read JSON from LocalStorage</h2>
+    <script>
+        const userJSON = localStorage.getItem("user");
+        const userObj = JSON.parse(userJSON);
+
+        console.log("User Object:", userObj);
+        document.write(`<p>Name: ${userObj.name}</p>`);
+        document.write(`<p>Course: ${userObj.course}</p>`);
+        document.write(`<p>Year: ${userObj.year}</p>`);
+    </script>
+</body>
+</html>

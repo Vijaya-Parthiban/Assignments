@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console Experiment</title>
+</head>
+
+<body>
+    <h3>Open Console to Experiment</h3>
+    <button id="testBtn">Run Console Demo</button>
+    <script>
+        document.getElementById("testBtn").addEventListener("click", () => {
+            const students = [
+                { name: "Vijaya", course: "FS", year: 2025 },
+                { name: "Ashok", course: "DS", year: 2024 },
+                { name: "Anitha", course: "AI", year: 2026 }
+            ];
+            console.log("Student Data Logged:");
+            console.log(students);
+            console.table(students);
+            debugger;
+            console.log("Code resumes after breakpoint.");
+        });
+    </script>
+</body>
+</html>

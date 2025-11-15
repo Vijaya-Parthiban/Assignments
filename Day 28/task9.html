@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 9 - Refactor JS</title>
+</head>
+<body>
+    <h2>Task 9: Refactor JS Example</h2>
+    <div id="output"></div>
+
+    <script>
+        
+        const nums = [1, 2, 3];
+
+        function sumArray(arr) {
+            return arr.reduce((acc, curr) => acc + curr, 0);
+        }
+
+        function displayResult(result) {
+            const outputDiv = document.getElementById("output");
+            outputDiv.innerHTML = `<p>Sum of array: ${result}</p>`;
+        }
+
+        const total = sumArray(nums);
+        displayResult(total);
+    </script>
+</body>
+</html>

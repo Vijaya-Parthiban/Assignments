@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 3 - Save Object</title>
+</head>
+<body>
+    <h2>Task 3: Save Object in LocalStorage</h2>
+    <script>
+        const user = {
+            name: "Vijaya",
+            course: "Full Stack",
+            year: 2025
+        };
+        const userJSON = JSON.stringify(user);
+        localStorage.setItem("user", userJSON);
+        document.write("<p>User object saved in localStorage!</p>");
+    </script>
+</body>
+</html>

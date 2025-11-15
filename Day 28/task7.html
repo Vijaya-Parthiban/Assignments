@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 7 - Save Location</title>
+</head>
+<body>
+    <h2>Save Your Location</h2>
+    <p id="location">Fetching location...</p>
+    <button id="saveBtn">Save Location</button>
+
+    <script>
+        let lat, lon;
+
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(position => {
+                lat = position.coords.latitude;
+                lon = position.coords.longitude;
+                document.getElementById("location").textContent = `Latitude: ${lat}, Longitude: ${lon}`;
+            });
+        }
+
+        document.getElementById("saveBtn").addEventListener("click", () => {
+            localStorage.setItem("latitude", lat);
+            localStorage.setItem("longitude", lon);
+            alert("Location saved in localStorage!");
+        });
+    </script>
+</body>
+</html>

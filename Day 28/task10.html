@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 10 - Current Time & SessionStorage</title>
+</head>
+<body>
+    <h2>Task 10: Current Time & SessionStorage</h2>
+    <p id="time"></p>
+
+    <script>
+        function updateTime() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString();
+            document.getElementById("time").textContent = `Current Time: ${timeString}`;
+
+            sessionStorage.setItem("lastTime", timeString);
+        }
+
+        updateTime();
+   
+        setInterval(updateTime, 1000);
+
+        console.log("Saved time in sessionStorage:", sessionStorage.getItem("lastTime"));
+    </script>
+</body>
+</html>
