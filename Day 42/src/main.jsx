@@ -18,6 +18,6 @@ createRoot(document.getElementById('root')).render(
     <Task4button button="click me"/>
     <Task5card Name="vijaya" Roll_number={22}/>
     <br />
-    <Task5card Name="rihaan" Roll_number={23}/>
+    <Task5card Name="Rihaan" Roll_number={23}/>
   </StrictMode>
 )
