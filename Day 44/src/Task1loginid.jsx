@@ -1,4 +1,4 @@
-import react, { useState } from 'react';
+import React, { useState } from 'react';
 export default function Task1_loggedin() {
     const [singup, setSingup] = useState(false);
     const [login, setLogin] = useState(false);

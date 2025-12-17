@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import ReactLogo from './assets/react.svg'
+import ViteLogo from '/vite.svg'
 import './App.css'
 import Task1_loggedin from './Task1loginid'
 import Task2PremiumButton from './Task2premiumbutton'
@@ -11,7 +11,7 @@ import Task6todolist from './Task6todolist'
 import Task8 from './Task8'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [Count, SetCount] = useState(0)
 
   return (
     <>
